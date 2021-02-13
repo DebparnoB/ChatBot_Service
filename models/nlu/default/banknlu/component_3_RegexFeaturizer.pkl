@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Banking_Card_Number",
+        "pattern": "[0-9]{16}"
+    },
+    {
+        "name": "Banking_Email",
+        "pattern": "[_A-Za-z0-9-\\+]+(\\.[_A-Za-z0-9-]+)*@[A-Za-z0-9-]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})"
+    },
+    {
+        "name": "Banking_Passcode",
+        "pattern": "[0-9]{6}"
+    },
+    {
+        "name": "Banking_Password",
+        "pattern": "(((?=.*[a-z])(?=.*[A-Z]))|((?=.*[a-z])(?=.*[0-9]))|((?=.*[A-Z])(?=.*[0-9])))(?=.{6,})"
+    },
+    {
+        "name": "General_Greetings",
+        "pattern": "hey[^\\s]*"
+    },
+    {
+        "name": "Zipcode",
+        "pattern": "[0-9]{5}"
+    }
+]
