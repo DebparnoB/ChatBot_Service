@@ -2,12 +2,12 @@ from flask import Flask
 from rasa_nlu.model import Interpreter
 
 interpreter = Interpreter.load("./models/nlu/default/banknlu")
+result = interpreter.parse("Hey what'up?")
 
 app = Flask(__name__)
 
 @app.route('/')
-def hello_world():
-    result = interpreter.parse("Hey what'up?")
+def hello_world():    
     return 'Hello, World!'
 
 @app.route('/user/<username>')
