@@ -25,4 +25,3 @@ coloredlogs~=10.0
 scikit-learn~=0.20.2
 sklearn-crfsuite~=0.3.6
 spacy==2.0.18
-./en_core_web_sm-2.0.0.tar.gz
