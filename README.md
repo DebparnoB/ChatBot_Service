@@ -10,6 +10,10 @@ Utterance generator creates sample utterances that we can use within intents for
 # Preparing the Dataset: 
 We  have prepared our data set as  questions that  people usually  ask  to  bank  employees,  at  customer  care centers or inquiry desks and categorize the questions according to their intents.   Training data can be provided as Markdown or as JSON, as a single file or as a directory containing multiple files. We are using JSON format here.
 The training data is structured into four different parts which is compatible with the specific ML model we have used (Rasa NLU) :  1. Common examples  2. Synonyms  3. Regex features  4. Lookup tables
+
+![0 Data1](https://user-images.githubusercontent.com/69355442/120441797-919c7400-c3a2-11eb-9dff-57b4d082e9ff.jpg)
+
+
 JSON format :
 
 {
@@ -21,7 +25,9 @@ JSON format :
     }
 }
 
-1.  Common examples : Common examples have three components: text, intent and entities. The first two are strings while the last one is an array.
+
+
+1.  **Common examples** : Common examples have three components: text, intent and entities. The first two are strings while the last one is an array.
 •	The text is the user message [required]
 •	The intent is the intent that should be associated with the text [optional]
 •	The entities are specific parts of the text which need to be identified [optional]
@@ -46,7 +52,7 @@ Entities are specified with a start and an end value, which together make a pyth
      }  
 }
 
-2.  Regex features : Regular expressions can be used to support the intent classification and entity extraction. For example, if your entity has a deterministic structure (like a Bank Card number or an email address), you can use a regular expression to ease detection of that entity. For the Card-number example it might look like this:
+2.  **Regex features** : Regular expressions can be used to support the intent classification and entity extraction. For example, if your entity has a deterministic structure (like a Bank Card number or an email address), you can use a regular expression to ease detection of that entity. For the Card-number example it might look like this:
 
 {
     "rasa_nlu_data": {
@@ -58,7 +64,7 @@ Entities are specified with a start and an end value, which together make a pyth
           ],
       } 
  }
-3.  Entity Synonyms : If you define entities as having the same value they will be treated as synonyms.
+3.  **Entity Synonyms** : If you define entities as having the same value they will be treated as synonyms.
 Here is an example below. Here all the words "email", "email address", "email id", "google mail id" etc mean the same while training the data. So they have been given the value "email".
 
 {
@@ -75,9 +81,12 @@ Here is an example below. Here all the words "email", "email address", "email id
           }  ]
       } 
  }
+ 
+ ![0 Data2](https://user-images.githubusercontent.com/69355442/120441720-7b8eb380-c3a2-11eb-92a5-5fd2d432926e.jpg)
 
 
-4.  Lookup Tables : The supplied lookup table files must be in a newline-delimited format. For example,    data/test/lookup_tables/plates.txt may contain:
+
+4.  **Lookup Tables** : The supplied lookup table files must be in a newline-delimited format. For example,    data/test/lookup_tables/plates.txt may contain:
 
 tacos
 beef
