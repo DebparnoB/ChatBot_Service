@@ -75,8 +75,6 @@ Here is an example below. Here all the words "email", "email address", "email id
           }  ]
       } 
  }
- 
- ![0 Data2](https://user-images.githubusercontent.com/69355442/120439608-55681400-c3a0-11eb-9fed-f5ca47063298.jpg)
 
 
 4.  Lookup Tables : The supplied lookup table files must be in a newline-delimited format. For example,    data/test/lookup_tables/plates.txt may contain:
@@ -135,24 +133,25 @@ A processing pipeline is the main building block of the Rasa NLU model. It defin
 After the training process Rasa stores the trained model This model is now ready to predict the intents of the utterances. 
 
 # Flowcharts
-![0 0component_lifecycle](https://user-images.githubusercontent.com/69355442/120439797-92cca180-c3a0-11eb-98d2-6b9ebf85a053.png)
-![0 1 Component_pipeline](https://user-images.githubusercontent.com/69355442/120439802-952efb80-c3a0-11eb-9045-1d3167962de5.jpg)
-![1 pipeline_init](https://user-images.githubusercontent.com/69355442/120439805-96602880-c3a0-11eb-96c1-584ebbe3480d.jpg)
-![1 utils](https://user-images.githubusercontent.com/69355442/120439811-96f8bf00-c3a0-11eb-8fb6-3650ebacb99d.jpg)
-![Uploading![2 train](https://user-images.githubusercontent.com/69355442/120439822-98c28280-c3a0-11eb-99aa-8334758bc242.jpg)
-![3 persist](https://user-images.githubusercontent.com/69355442/120439825-995b1900-c3a0-11eb-9661-b0582de40100.jpg)
-![3 spacy_featurizer](https://user-images.githubusercontent.com/69355442/120439832-99f3af80-c3a0-11eb-97a5-b07c7c32de5d.jpg)
-![4 load](https://user-images.githubusercontent.com/69355442/120439835-9b24dc80-c3a0-11eb-9af6-dc5a3436e8a5.jpg)
-![4 regex_featurizer](https://user-images.githubusercontent.com/69355442/120439843-9ceea000-c3a0-11eb-8d59-9139afbc7bae.jpg)
-![5 crf_entity_extractor](https://user-images.githubusercontent.com/69355442/120439846-9d873680-c3a0-11eb-9d50-04a5c0c2ba7f.jpg)
-![5 parse](https://user-images.githubusercontent.com/69355442/120439848-9e1fcd00-c3a0-11eb-897b-c0ed0894f47f.jpg)
-![6 entity_synonyms](https://user-images.githubusercontent.com/69355442/120439853-9f50fa00-c3a0-11eb-909a-a05e0b237af7.jpg)
-![6 predict](https://user-images.githubusercontent.com/69355442/120439857-9fe99080-c3a0-11eb-8637-708d87dc5548.jpg)
-![7 sklearn_intent_classifier](https://user-images.githubusercontent.com/69355442/120439861-a11abd80-c3a0-11eb-8b6c-684fa289b6a7.jpg)
-![8 sklearn_intent_classifier](https://user-images.githubusercontent.com/69355442/120439865-a1b35400-c3a0-11eb-8c0c-e32f71c9ec28.jpg)
-![features](https://user-images.githubusercontent.com/69355442/120439870-a24bea80-c3a0-11eb-8f6c-4728dd68b119.jpg)
-![labels](https://user-images.githubusercontent.com/69355442/120439873-a2e48100-c3a0-11eb-9779-865719c293ef.jpg)
- 2 tokenizer.jpg…]()
+![0 0component_lifecycle](https://user-images.githubusercontent.com/69355442/120440128-e6d78600-c3a0-11eb-9ba7-e68aee143f9b.png)
+![0 1 Component_pipeline](https://user-images.githubusercontent.com/69355442/120440134-e8a14980-c3a0-11eb-928e-ff46b50822ea.jpg)
+![1 pipeline_init](https://user-images.githubusercontent.com/69355442/120440139-e9d27680-c3a0-11eb-8188-ed28c8a17514.jpg)
+![1 utils](https://user-images.githubusercontent.com/69355442/120440143-eb03a380-c3a0-11eb-95b8-d75445df41fa.jpg)
+![2 tokenizer](https://user-images.githubusercontent.com/69355442/120440147-ec34d080-c3a0-11eb-9285-84bbb4436034.jpg)
+![2 train](https://user-images.githubusercontent.com/69355442/120440154-eccd6700-c3a0-11eb-85ec-3384449640df.jpg)
+![3 persist](https://user-images.githubusercontent.com/69355442/120440158-edfe9400-c3a0-11eb-83bb-67ebe92d909a.jpg)
+![3 spacy_featurizer](https://user-images.githubusercontent.com/69355442/120440164-ef2fc100-c3a0-11eb-9198-1ee4bd76d735.jpg)
+![4 load](https://user-images.githubusercontent.com/69355442/120440172-f060ee00-c3a0-11eb-9e7b-48225f8d996b.jpg)
+![4 regex_featurizer](https://user-images.githubusercontent.com/69355442/120440184-f1921b00-c3a0-11eb-8b87-f6b09c79d218.jpg)
+![5 crf_entity_extractor](https://user-images.githubusercontent.com/69355442/120440194-f22ab180-c3a0-11eb-8ba9-092ce06a0ec4.jpg)
+![5 parse](https://user-images.githubusercontent.com/69355442/120440199-f35bde80-c3a0-11eb-8fe6-e3f12d61e491.jpg)
+![6 entity_synonyms](https://user-images.githubusercontent.com/69355442/120440203-f48d0b80-c3a0-11eb-98a3-61681bef7fa6.jpg)
+![6 predict](https://user-images.githubusercontent.com/69355442/120440216-f656cf00-c3a0-11eb-883e-60c30edc9531.jpg)
+![7 sklearn_intent_classifier](https://user-images.githubusercontent.com/69355442/120440223-f787fc00-c3a0-11eb-87b3-429e2a8634ce.jpg)
+![8 sklearn_intent_classifier](https://user-images.githubusercontent.com/69355442/120440226-f8209280-c3a0-11eb-9600-087cf89d1a78.jpg)
+![features](https://user-images.githubusercontent.com/69355442/120440231-f8b92900-c3a0-11eb-9da7-6e82d868f6f9.jpg)
+![labels](https://user-images.githubusercontent.com/69355442/120440236-f9ea5600-c3a0-11eb-9d4a-99f3ce33362b.jpg)
+
 
 
 # Conclusion
