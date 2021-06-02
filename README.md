@@ -134,6 +134,25 @@ A processing pipeline is the main building block of the Rasa NLU model. It defin
 
 After the training process Rasa stores the trained model This model is now ready to predict the intents of the utterances. 
 
+# Flowcharts
+![0 0component_lifecycle](https://user-images.githubusercontent.com/69355442/120439797-92cca180-c3a0-11eb-98d2-6b9ebf85a053.png)
+![0 1 Component_pipeline](https://user-images.githubusercontent.com/69355442/120439802-952efb80-c3a0-11eb-9045-1d3167962de5.jpg)
+![1 pipeline_init](https://user-images.githubusercontent.com/69355442/120439805-96602880-c3a0-11eb-96c1-584ebbe3480d.jpg)
+![1 utils](https://user-images.githubusercontent.com/69355442/120439811-96f8bf00-c3a0-11eb-8fb6-3650ebacb99d.jpg)
+![Uploading![2 train](https://user-images.githubusercontent.com/69355442/120439822-98c28280-c3a0-11eb-99aa-8334758bc242.jpg)
+![3 persist](https://user-images.githubusercontent.com/69355442/120439825-995b1900-c3a0-11eb-9661-b0582de40100.jpg)
+![3 spacy_featurizer](https://user-images.githubusercontent.com/69355442/120439832-99f3af80-c3a0-11eb-97a5-b07c7c32de5d.jpg)
+![4 load](https://user-images.githubusercontent.com/69355442/120439835-9b24dc80-c3a0-11eb-9af6-dc5a3436e8a5.jpg)
+![4 regex_featurizer](https://user-images.githubusercontent.com/69355442/120439843-9ceea000-c3a0-11eb-8d59-9139afbc7bae.jpg)
+![5 crf_entity_extractor](https://user-images.githubusercontent.com/69355442/120439846-9d873680-c3a0-11eb-9d50-04a5c0c2ba7f.jpg)
+![5 parse](https://user-images.githubusercontent.com/69355442/120439848-9e1fcd00-c3a0-11eb-897b-c0ed0894f47f.jpg)
+![6 entity_synonyms](https://user-images.githubusercontent.com/69355442/120439853-9f50fa00-c3a0-11eb-909a-a05e0b237af7.jpg)
+![6 predict](https://user-images.githubusercontent.com/69355442/120439857-9fe99080-c3a0-11eb-8637-708d87dc5548.jpg)
+![7 sklearn_intent_classifier](https://user-images.githubusercontent.com/69355442/120439861-a11abd80-c3a0-11eb-8b6c-684fa289b6a7.jpg)
+![8 sklearn_intent_classifier](https://user-images.githubusercontent.com/69355442/120439865-a1b35400-c3a0-11eb-8c0c-e32f71c9ec28.jpg)
+![features](https://user-images.githubusercontent.com/69355442/120439870-a24bea80-c3a0-11eb-8f6c-4728dd68b119.jpg)
+![labels](https://user-images.githubusercontent.com/69355442/120439873-a2e48100-c3a0-11eb-9779-865719c293ef.jpg)
+ 2 tokenizer.jpg…]()
 
 
 # Conclusion
