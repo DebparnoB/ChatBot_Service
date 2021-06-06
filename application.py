@@ -1,3 +1,12 @@
+from flask import Flask, make_response
+from flask_cors import CORS, cross_origin
+from rasa_nlu.model import Interpreter
+
+interpreter = Interpreter.load("./models/nlu/default/current")
+
+application = Flask(__name__)
+CORS(application)
+
 @application.route('/')
 def hello_world():    
     return 'Hello, World!'
